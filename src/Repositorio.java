@@ -98,7 +98,8 @@ public class Repositorio extends Object {
             {
                 return emprestimoArray.get(i);
             }
-       }
+       }System.out.println("aaaaa");
         return null;
+
     }
 }
