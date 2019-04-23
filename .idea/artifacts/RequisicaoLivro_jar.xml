@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RequisicaoLivro:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RequisicaoLivro_jar</output-path>
+    <root id="archive" name="RequisicaoLivro.jar">
+      <element id="module-output" name="RequisicaoLivro" />
+    </root>
+  </artifact>
+</component>
