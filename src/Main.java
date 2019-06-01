@@ -34,7 +34,7 @@ public class Main {
         Metodo_Pagamento paypal = new Metodo_Pagamento("paypal");
         Metodo_Pagamento mbway = new Metodo_Pagamento("mbway");
         Metodo_Pagamento multibanco = new Metodo_Pagamento("multibanco");
-        Coima coima = new Coima("qualquer",11.1,);
+        //Coima coima = new Coima("qualquer",11.1,);
     }
 
 }
