@@ -22,16 +22,6 @@ public class Main {
         //... criação do objeto repositorio
         //Repositorio repo = new RepositorioMem();
         //repo.adicionaEntradaNovoLivro(entradaNovoLivro);
-        //...login Utilizador
-        //Login login = new Login(u,"aaa");
-        //Login login1 = new Login(u1,"a");
-        //Login a = new Login(u2,"sadasda");
-        //a.signIN();
-        //login.signIN();
-        //login1.signIN();
-        //login.forgetPw("a");
-        //System.out.println(login.getPassword());
-        //System.out.println(login.getArrayRegisto());
 
         //...Pagamento de coima
         Metodo_Pagamento dinheiro = new Metodo_Pagamento("dinheiro");
@@ -46,6 +36,14 @@ public class Main {
         evento1.registoEvento(u);
         evento1.registoEvento(u1);
         //evento.registoEvento(u2);
+
+        //...Fazer Login
+        Login login = new Login(u,"aaa");
+        Login login1 = new Login(u1,"aaaa");
+        login.signIN();
+        login1.signIN();
+        System.out.println(login.getArrayRegisto());
+
     }
 
 }
