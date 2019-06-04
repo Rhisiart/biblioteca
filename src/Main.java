@@ -15,6 +15,7 @@ public class Main {
         Requisicao requisicao = new Requisicao(LocalDate.now(),u,c);
         Emprestimo emprestimo = new Emprestimo(LocalDate.now(),requisicao);
         Devolucao devolucao = new Devolucao(LocalDate.now(),emprestimo);
+
         //RequisicaoCompraCopia requisicaoCompraCopia = new RequisicaoCompraCopia("pendente", LocalDate.now(), "Oficio",l,u);
         //Encomenda encomenda = new Encomenda(LocalDate.now(),requisicaoCompraCopia);
         //EntradaNovoLivro entradaNovoLivro = new EntradaNovoLivro(LocalDate.now(),encomenda,c);
@@ -40,6 +41,11 @@ public class Main {
         Coima coima = new Coima("aaa",1211,devolucao,dinheiro);
         coima.pagamento();
 
+        //...Inscricao em evento
+        Evento evento1 = new Evento(3,"auditorio 2",LocalDate.now(),"palasta sobre outsystem");
+        evento1.registoEvento(u);
+        evento1.registoEvento(u1);
+        //evento.registoEvento(u2);
     }
 
 }
