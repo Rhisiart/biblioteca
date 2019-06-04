@@ -12,6 +12,9 @@ public class Main {
         PropostaAquisicao propostaAquisicao = new PropostaAquisicao(LocalDate.now(),u,"Alice no Pais das Maravilhas");
         Livro l = new Livro("Programar em Java", "FCA");
         Copia c = new Copia(1, l);
+        Requisicao requisicao = new Requisicao(LocalDate.now(),u,c);
+        Emprestimo emprestimo = new Emprestimo(LocalDate.now(),requisicao);
+        Devolucao devolucao = new Devolucao(LocalDate.now(),emprestimo);
         //RequisicaoCompraCopia requisicaoCompraCopia = new RequisicaoCompraCopia("pendente", LocalDate.now(), "Oficio",l,u);
         //Encomenda encomenda = new Encomenda(LocalDate.now(),requisicaoCompraCopia);
         //EntradaNovoLivro entradaNovoLivro = new EntradaNovoLivro(LocalDate.now(),encomenda,c);
@@ -34,7 +37,9 @@ public class Main {
         Metodo_Pagamento paypal = new Metodo_Pagamento("paypal");
         Metodo_Pagamento mbway = new Metodo_Pagamento("mbway");
         Metodo_Pagamento multibanco = new Metodo_Pagamento("multibanco");
-        //Coima coima = new Coima("qualquer",11.1,);
+        Coima coima = new Coima("aaa",1211,devolucao,dinheiro);
+        coima.pagamento();
+
     }
 
 }

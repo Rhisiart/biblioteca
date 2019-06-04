@@ -19,7 +19,7 @@ public class Coima extends java.lang.Object {
     {
         String nome = metodo_pagamento.getOpcao_pagamento();
         System.out.println("O valor pago foi " + valor);
-        System.out.println(" esta pago pelo metodo " + nome);
+        System.out.println("esta pago pelo metodo " + nome);
     }
 
     public  String getDescricao() {
