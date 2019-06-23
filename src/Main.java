@@ -40,9 +40,11 @@ public class Main {
         //...Fazer Login
         Login login = new Login(u,"aaa");
         Login login1 = new Login(u1,"aaaa");
+        Login login2 = new Login(u2,"uhk");
         login.signIN();
         login1.signIN();
-        System.out.println(login.getArrayRegisto());
+        login2.signIN();
+        System.out.println(login.getArrayRegisto().size());
 
     }
 
